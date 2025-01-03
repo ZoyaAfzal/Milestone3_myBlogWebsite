@@ -23,10 +23,10 @@ const Header = () => {
              <Link href="/">Home</Link>
            </li>
            <li className="headerLi">
-             <Link href="#postSection">Posts</Link>
+             <Link href="#postSection">Blog Posts</Link>
            </li>
            <li className="headerLi">
-             <Link href="/post/world-travel/#postSection">Pages</Link>
+             <Link href="/post/world-travel/#postSection">Top Blog Page</Link>
            </li>        
            <li className="headerLi">
              <Link href="/contact">Contact</Link>
@@ -46,7 +46,7 @@ const Header = () => {
                     height={32}
                     />
                     <p className="text-sm font-[600]">
-                      {session ? session?.user!.name : "Hello Stranger"}
+                      {session ? session?.user!.name : "Hello stranger"}
                     </p>
                 </div> 
 
