@@ -11,10 +11,11 @@ const Header = () => {
     <div className='w-full h-16 border-b-[1px] border-b-black font-titleFont sticky top-0 bg-white z-50 px-8'>
         <div className="max-w-7xl h-full mx-auto flex justify-between items-center ">
           <Link href="/">
-          <div className='flex items-center w-10 h-10 rounded-full'>
+          <div className='hidden md:block w-10 h-10 rounded-full '>
+            <div className="w-10 h-10 flex items-center">
             <Image width={70} height={70} src={profilepic} alt="logoDark" className='rounded-full border-[2px] border-secondaryColor'/>
-            <span className="text-xl font-[700] px-2 hover:text-secondaryColor">MyBlog</span>
-          
+            <span className="text-xl font-[700] px-2 hover:text-secondaryColor">MyBlog</span>       
+            </div>
          </div>  
          </Link>
          <div>

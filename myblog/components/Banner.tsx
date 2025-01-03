@@ -12,7 +12,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 function SampleNextArrow(props: any){
     const { onClick } = props;
     return (
-        <div className="w-44 h-8 absolute bottom-32 z-30 right-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
+        <div className="sm:w-44 xs:w-10 h-8 absolute bottom-32 z-30 right-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
         onClick = { onClick }
         >
             <div className='w-full h-full text-gray-300 text-sm uppercase relative flex items-center justify-end cursor-pointer group'>
@@ -34,7 +34,7 @@ function SamplePrevArrow(props: any) {
     const { onClick } = props;
     return (
       <div
-        className="w-44 h-8 absolute bottom-32 z-30 left-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
+        className="sm:w-44 xs:w-10 h-8 absolute bottom-32 z-30 left-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
         onClick={onClick}
       >
         <div className="w-full h-full text-gray-300 text-sm uppercase relative flex items-center justify-between cursor-pointer group  ">
@@ -67,9 +67,9 @@ const Banner = () => {
         <Slider {...settings} >
             <div>
               <div className="flex justify-center items-center">
-              <h1 className="lg:text-7xl absolute text-white md:text-5xl text-3xl text-center gap-y-12 font-titleFont font-semibold lg:mb-20">Leave your mark on<br /> all over the world</h1>
+              <h1 className="lg:text-6xl absolute text-white md:text-5xl sm:text-3xl xs:text-2xl text-center gap-y-12 font-titleFont font-semibold lg:mb-20">Leave your mark on<br /> all over the world</h1>
             <Image 
-            className="w-full  md:h-[650px] h-[590px] object-cover"
+            className="w-full md:h-[650px] h-[520px] object-cover overflow-hidden"
             src={travelblog}
             loading={"eager"}
             alt="bannertravel"
@@ -78,9 +78,9 @@ const Banner = () => {
           </div>
           <div>
          <div className="flex justify-center items-center">
-          <h2 className="lg:text-5xl absolute text-white md:text-3xl text-2xl text-center gap-y-12 font-titleFont font-semibold lg:mb-20">Whether it&apos;s a local getaway <br /> or a global adventure, <br /> Traveling enriches your soul.</h2>
+          <h2 className="lg:text-5xl absolute text-white md:text-3xl sm:text-2xl xs:text-lg text-center gap-y-12 font-titleFont font-semibold lg:mb-20 xs:mb-20">Whether it&apos;s a local getaway <br /> or a global adventure, <br /> Traveling enriches your soul.</h2>
             <Image 
-            className="w-full h-auto md:h-[650px] object-cover"
+            className="w-full md:h-[650px] h-[520px] object-cover overflow-hidden"
             src={bannertravel}
             loading={"lazy"}
             alt="bannertravel"
@@ -89,9 +89,9 @@ const Banner = () => {
             </div>
             <div>
             <div className="flex justify-center items-center">
-              <h3 className="lg:text-5xl absolute text-white md:text-3xl text-2xl text-center font-titleFont font-semibold lg:mb-20">This fashion blog is your <br /> go-to guide for the latest trends, <br /> style tips, and outfit inspiration.</h3>
+              <h3 className="lg:text-5xl absolute text-white md:text-3xl sm:text-2xl xs:text-lg text-center font-titleFont font-semibold lg:mb-20">This fashion blog is your <br /> go-to guide for the latest trends, <br /> style tips, and outfit inspiration.</h3>
             <Image 
-               className="w-full h-auto md:h-[650px] object-cover"
+               className="w-full md:h-[650px] h-[590px] object-cover overflow-hidden"
                src={bannerfashion}
                loading={"lazy"}
                alt="bannerfashion"
@@ -100,9 +100,9 @@ const Banner = () => {
             </div>
             <div>
             <div className="flex justify-center items-center">
-              <h4 className="lg:text-6xl absolute text-white md:text-3xl text-2xl text-center font-titleFont font-semibold lg:mb-20">Explore diverse cuisines <br /> and savor the art of cooking.</h4>
+              <h4 className="lg:text-6xl absolute text-white md:text-3xl sm:text-2xl xs:text-lg text-center font-titleFont font-semibold lg:mb-20 xs:mb-20">Explore diverse cuisines <br /> and savor the art of cooking.</h4>
             <Image 
-               className="w-full h-auto md:h-[650px] object-cover"
+               className="w-full md:h-[650px] h-[590px] object-cover overflow-hidden"
                src={bannerImgThree}
                loading={"lazy"}
                alt="bannerImgThree"
@@ -111,9 +111,9 @@ const Banner = () => {
             </div>     
            <div>
             <div className="flex justify-center items-center">
-              <h5 className="lg:text-5xl absolute text-white md:text-3xl text-2xl text-center font-titleFont font-semibold lg:mb-20">A delicious journey, sharing recipes, <br /> cooking tips, and culinary adventures.</h5>
+              <h5 className="lg:text-5xl absolute text-white md:text-3xl sm:text-2xl xs:text-lg text-center font-titleFont font-semibold lg:mb-20">A delicious journey, sharing recipes, <br /> cooking tips, and culinary adventures.</h5>
             <Image 
-            className="w-full h-auto md:h-[650px] object-cover"
+            className="w-full md:h-[650px] h-[520px] object-cover overflow-hidden"
             src={bannerImgFour}
             loading={"lazy"}
             alt="bannerImgFour"

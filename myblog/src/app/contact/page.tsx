@@ -4,7 +4,7 @@ import React from 'react';
 
 function ContactPage() {
   return (
-    <div className="max-w-screen-xl w-full h-auto mx-auto px-4">
+    <div className="max-w-screen-xl w-full lg:h-[1110px] sm:h-[1090px] xs:h-[1240px] mx-auto px-4">
       {/* Banner Section */}
       <div className="w-full h-[352px] flex flex-col justify-center items-center gap-8">
         <Image
